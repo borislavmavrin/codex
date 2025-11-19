@@ -1,0 +1,22 @@
+[package]
+edition = "2024"
+name = "codex-plan"
+version = { workspace = true }
+
+[[bin]]
+name = "codex-plan"
+path = "src/main.rs"
+
+[lib]
+name = "codex_plan"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true, features = ["derive"] }
+codex-protocol = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
